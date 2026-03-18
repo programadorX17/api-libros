@@ -1,0 +1,22 @@
+[
+  { "nombreLibro":"Cálculo Multivariable", "nombreAutor":"James Stewart", "codigo":"mat456", "categoriaLibro":"CICLO_BASICO", "stock":15, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Estructuras de Datos", "nombreAutor":"Luis Joyanes", "codigo":"sis001", "categoriaLibro":"ING_SISTEMAS", "stock":5, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Mecánica de Suelos", "nombreAutor":"Karl Terzaghi", "codigo":"civ789", "categoriaLibro":"ING_CIVIL", "stock":0, "disponibilidad":"NO_DISPONIBLE" },
+  { "nombreLibro":"Investigación de Operaciones", "nombreAutor":"Hamdy Taha", "codigo":"ind102", "categoriaLibro":"ING_INDUSTRIAL", "stock":12, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Física Mecánica", "nombreAutor":"Sears Zemansky", "codigo":"fis202", "categoriaLibro":"CICLO_BASICO", "stock":20, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Ingeniería de Software", "nombreAutor":"Ian Sommerville", "codigo":"sis002", "categoriaLibro":"ING_SISTEMAS", "stock":0, "disponibilidad":"NO_DISPONIBLE" },
+  { "nombreLibro":"Diseño de Estructuras", "nombreAutor":"Jack McCormac", "codigo":"civ303", "categoriaLibro":"ING_CIVIL", "stock":7, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Gestión de Calidad", "nombreAutor":"Joseph Juran", "codigo":"ind505", "categoriaLibro":"ING_INDUSTRIAL", "stock":4, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Química General", "nombreAutor":"Raymond Chang", "codigo":"qui999", "categoriaLibro":"CICLO_BASICO", "stock":10, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Bases de Datos SQL", "nombreAutor":"Abraham Silberschatz", "codigo":"sis003", "categoriaLibro":"ING_SISTEMAS", "stock":18, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Hidráulica de Canales", "nombreAutor":"Ven Te Chow", "codigo":"civ111", "categoriaLibro":"ING_CIVIL", "stock":3, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Ergonomía Industrial", "nombreAutor":"Mondelo Pedro", "codigo":"ind888", "categoriaLibro":"ING_INDUSTRIAL", "stock":0, "disponibilidad":"NO_DISPONIBLE" },
+  { "nombreLibro":"Programación en Java", "nombreAutor":"Deitel & Deitel", "codigo":"sis004", "categoriaLibro":"ING_SISTEMAS", "stock":25, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Topografía Aplicada", "nombreAutor":"Wolf Brinker", "codigo":"civ222", "categoriaLibro":"ING_CIVIL", "stock":6, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Termodinámica", "nombreAutor":"Yunus Cengel", "codigo":"ind444", "categoriaLibro":"ING_INDUSTRIAL", "stock":9, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Probabilidad y Estadística", "nombreAutor":"Walpole Myers", "codigo":"mat777", "categoriaLibro":"CICLO_BASICO", "stock":0, "disponibilidad":"NO_DISPONIBLE" },
+  { "nombreLibro":"Redes de Computadores", "nombreAutor":"Andrew Tanenbaum", "codigo":"sis005", "categoriaLibro":"ING_SISTEMAS", "stock":14, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Resistencia de Materiales", "nombreAutor":"Ferdinand Beer", "codigo":"civ555", "categoriaLibro":"ING_CIVIL", "stock":11, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Procesos de Manufactura", "nombreAutor":"Mikell Groover", "codigo":"ind666", "categoriaLibro":"ING_INDUSTRIAL", "stock":2, "disponibilidad":"DISPONIBLE" },
+  { "nombreLibro":"Sistemas Operativos", "nombreAutor":"Silberschatz Galvin", "codigo":"sis006", "categoriaLibro":"ING_SISTEMAS", "stock":8, "disponibilidad":"DISPONIBLE" }
+]
