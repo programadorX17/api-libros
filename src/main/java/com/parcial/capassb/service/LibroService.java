@@ -1,32 +1,28 @@
 package com.parcial.capassb.service;
 
-import com.parcial.capassb.model.CategoriaLibro;
+
+import com.parcial.capassb.dtos.LibroCreateRequestDTO;
+import com.parcial.capassb.dtos.LibroResponseDTO;
 import com.parcial.capassb.model.Disponibilidad;
-import com.parcial.capassb.model.LibroEntity;
+
 import java.util.List;
 
 
 public interface LibroService {
 
 
-     LibroEntity registrarLibro(LibroEntity libro);
+     LibroResponseDTO registrarLibro(LibroCreateRequestDTO libroCreateRequestDTO);
 
-     List<LibroEntity> listarLibros();
+     List<LibroResponseDTO> listarLibros();
 
-     List<LibroEntity> listarPorCategoria(CategoriaLibro categoriaLibro);
+     List<LibroResponseDTO> listarPorCategoria(Long idCategoria);
 
-     List<LibroEntity> listarPorDisponibilidad(Disponibilidad disponibilidad);
+     List<LibroResponseDTO> listarPorDisponibilidad(Disponibilidad disponibilidad);
 
-     List<LibroEntity> buscarPorNombre(String nombreLibro);
+     List<LibroResponseDTO> buscarPorNombre(String nombreLibro);
 
-     LibroEntity buscarPorId(Long idLibro);
+     LibroResponseDTO buscarPorId(Long idLibro);
 
-     LibroEntity prestarLibro(Long idLibro);
-
-     LibroEntity actualizarLibro(Long idLibro, LibroEntity libro);
-
-     LibroEntity devolverLibro(Long idLibro);
-
-
+     LibroResponseDTO actualizarLibro(Long idLibro, LibroCreateRequestDTO libroCreateRequestDTO);
 
 }

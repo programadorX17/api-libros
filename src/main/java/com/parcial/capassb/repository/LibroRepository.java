@@ -1,21 +1,23 @@
 package com.parcial.capassb.repository;
 
-import com.parcial.capassb.model.CategoriaLibro;
+
 import com.parcial.capassb.model.Disponibilidad;
-import com.parcial.capassb.model.LibroEntity;
+import com.parcial.capassb.model.Libro;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface LibroRepository extends JpaRepository<LibroEntity, Long> {
+public interface LibroRepository extends JpaRepository<Libro, Long> {
 
-    List<LibroEntity> findByNombreLibro(String nombreLibro);
+    List<Libro> findByNombreLibro(String nombreLibro);
 
-    Optional<LibroEntity> findByCodigo(String codigo);
+    Boolean existsByCodigo(String codigo);
 
-    List<LibroEntity> findByCategoriaLibro(CategoriaLibro categoriaLibro);
+    Optional<Libro> findByCodigo(String codigo);
 
-    List<LibroEntity> findByDisponibilidad(Disponibilidad disponibilidad);
+    List<Libro> findByCategoriaLibro_IdCategoria(Long idCategoria);
+
+    List<Libro> findByDisponibilidad(Disponibilidad disponibilidad);
 
 }
