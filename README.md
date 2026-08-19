@@ -9,7 +9,7 @@ API RESTful desarrollada con **Spring Boot** para la gestión de catálogo de li
 * **Java 17**
 * **Spring Boot 3**
     * Spring Data JPA
-    * Spring Web 
+    * Spring Web
     * Validation (`hibernate-validator`)
 * **Base de Datos:** PostgreSQL / MySQL
 * **Herramientas:** Lombok, Maven, Postman
