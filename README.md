@@ -6,7 +6,7 @@ API RESTful desarrollada con **Spring Boot** para la gestión de catálogo de li
 
 ## 🚀 Tecnologías Utilizadas
 
-* **Java 17**
+* **Java 21**
 * **Spring Boot 3**
     * Spring Data JPA
     * Spring Web
