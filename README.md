@@ -49,3 +49,32 @@ La API devuelve respuestas de error estandarizadas con el siguiente formato JSON
   "mensaje": "Falló la validación de los datos enviados",
   "detalles": "uri=/api/libros"
 }
+```
+
+## ⚙️ Configuración y Ejecución Local
+
+Para levantar este proyecto en tu entorno local siguiendo las mejores prácticas de seguridad, sigue estos pasos:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   ```
+
+2. **Configurar la base de datos**
+Crea una base de datos en PostgreSQL con el nombre definido en el proyecto:
+    ```bash
+   CREATE DATABASE gestion_libros;
+   ```
+3. **Configurar variables de entorno**
+   Configura las siguientes variables de entorno en tu IDE (como IntelliJ en Run Configurations) antes de ejecutar la aplicación:
+    ```bash
+   DB_URL: jdbc:postgresql://localhost:5432/gestion_libros
+   DB_USER: postgres
+   DB_PASSWORD: tu_contraseña_postgres
+   ```
+
+4. **Ejecutar la aplicacion**
+   Puedes correr la clase principal de Spring Boot desde tu IDE o usar Maven en la terminal:
+    ```bash
+   mvn spring-boot:run
+   ```
