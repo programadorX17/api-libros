@@ -1,0 +1,387 @@
+{
+  "info": {
+    "_postman_id": "1eec1f69-e45f-4b94-827a-3930baadd295",
+    "name": "gestion-libros",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50136344",
+    "_collection_link": "https://go.postman.co/collection/50136344-1eec1f69-e45f-4b94-827a-3930baadd295?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Libros",
+      "item": [
+        {
+          "name": "Registra Libro (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "  { \"nombreLibro\":\"GOAT LM10\", \"nombreAutor\":\"Julian Suarez\", \"codigo\":\"lmc103\", \"idCategoriaLibro\":14, \"stock\":5, \"disponibilidad\":\"DISPONIBLE\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url_base}}/api/libros",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar libros (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar por Categoria (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros/categoria/13",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "categoria",
+                "13"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Listar por Disponibilidad (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros/disponibilidad/NO_DISPONIBLE",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "disponibilidad",
+                "NO_DISPONIBLE"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por nombre (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros/buscar/nombre/Algebra Lineal",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "buscar",
+                "nombre",
+                "Algebra Lineal"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros/11",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Actualizar Libro(200 OK)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nombreLibro\": \"Química Basic\",\r\n    \"nombreAutor\": \"Raymond Chang\",\r\n    \"codigo\": \"qui872\",\r\n    \"categoriaLibro\": \"CICLO_BASICO\",\r\n    \"stock\": 8,\r\n    \"disponibilidad\": \"DISPONIBLE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url_base}}/api/libros/10",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "10"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Categorias",
+      "item": [
+        {
+          "name": "Listar Categorias (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/categorias",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "categorias"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Buscar por ID (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/categorias/14",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "categorias",
+                "14"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registrar Categoria (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"nombreCategoria\":\"Tecnologia\",\r\n \"codCategoria\":\"010Tec\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url_base}}/api/categorias",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "categorias"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Carrito",
+      "item": [
+        {
+          "name": "Agregar libro al carrito (200 OK)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"idLibro\":8,\r\n    \"cantidad\":3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url_base}}/api/carrito",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "carrito"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Devolver Libro (200 OK)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/carrito/devolver/8",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "carrito",
+                "devolver",
+                "8"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Manejo de Excepciones",
+      "item": [
+        {
+          "name": "Recurso No Encontado (404 NOT FOUND)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros/999",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "999"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Registro Duplicado (409 CONFLICT)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " { \"nombreLibro\":\"Jorge Messi\", \"nombreAutor\":\"Julian Suarez\", \"codigo\":\"lmc103\", \"idCategoriaLibro\":14, \"stock\":5, \"disponibilidad\":\"DISPONIBLE\" }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url_base}}/api/libros",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Campos Obligatorios(Bad Request 400)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": " {  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{url_base}}/api/libros",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parametro Incorrecto(400 Bad Request)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url_base}}/api/libros/abc",
+              "host": [
+                "{{url_base}}"
+              ],
+              "path": [
+                "api",
+                "libros",
+                "abc"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
