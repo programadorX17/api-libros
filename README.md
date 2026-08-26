@@ -1,10 +1,10 @@
-# 📚 REST API - Sistema de Gestión de Libros y Préstamos
+# REST API - Sistema de Gestión de Libros y Préstamos
 
 API RESTful desarrollada con **Spring Boot** para la gestión de catálogo de libros, categorías y préstamos. El sistema implementa una arquitectura por capas, validaciones de entrada, DTOs y un manejo centralizado de excepciones.
 
 ---
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 * **Java 21**
 * **Spring Boot 3**
@@ -16,7 +16,7 @@ API RESTful desarrollada con **Spring Boot** para la gestión de catálogo de li
 
 ---
 
-## 🏗️ Arquitectura y Principios de Diseño
+## Arquitectura y Principios de Diseño
 
 * **Arquitectura en Capas:** Clara separación entre Controladores (`Controller`), Servicios (`Service`), Repositorios (`Repository`) y Capa de Datos.
 * **Patrón DTO:** Desacoplamiento entre la capa de presentación y el dominio JPA para evitar *Over-Posting* y filtrado de datos sensibles.
@@ -25,9 +25,9 @@ API RESTful desarrollada con **Spring Boot** para la gestión de catálogo de li
 
 ---
 
-## 📌 Endpoints Principales
+## Endpoints Principales
 
-### 📖 Libros (`/api/libros`)
+### Libros (`/api/libros`)
 | Método | Endpoint | Descripción | Código HTTP |
 | :--- | :--- | :--- | :--- |
 | `GET` | `/api/libros` | Listar todos los libros | `200 OK` |
@@ -38,7 +38,7 @@ API RESTful desarrollada con **Spring Boot** para la gestión de catálogo de li
 
 ---
 
-## 🛡️ Estructura de Manejo de Errores
+## Estructura de Manejo de Errores
 
 La API devuelve respuestas de error estandarizadas con el siguiente formato JSON:
 
@@ -51,7 +51,7 @@ La API devuelve respuestas de error estandarizadas con el siguiente formato JSON
 }
 ```
 
-## ⚙️ Configuración y Ejecución Local
+## Configuración y Ejecución Local
 
 Para levantar este proyecto en tu entorno local siguiendo las mejores prácticas de seguridad, sigue estos pasos:
 
